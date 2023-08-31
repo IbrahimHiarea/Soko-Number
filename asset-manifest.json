@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Soko-Number/static/css/main.abd26093.css",
+    "main.js": "/Soko-Number/static/js/main.6979d6da.js",
+    "index.html": "/Soko-Number/index.html",
+    "main.abd26093.css.map": "/Soko-Number/static/css/main.abd26093.css.map",
+    "main.6979d6da.js.map": "/Soko-Number/static/js/main.6979d6da.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abd26093.css",
+    "static/js/main.6979d6da.js"
+  ]
+}
