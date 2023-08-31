@@ -1,0 +1,219 @@
+.App{
+    position: relative;
+    width: 100%;
+}
+
+.start-up h1{
+    color: #31989a;
+    font-size: 100px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 100px;
+}
+.start-up h3{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.start-up .container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(220px,1fr));
+    row-gap: 50px;
+    column-gap: 5px;
+    justify-items: center;
+}
+
+.start-up .container div{
+    text-align: center;
+    font-size: 20px;
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    background-color: #31989a;
+    color: #382b3e;
+}
+
+.start-up .container div:hover{
+    background-color: #31989a;
+    color: white;
+    transform: translateY(-10px);
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.Game{
+    width: 100%;
+}
+
+.Game .Title{
+    color: #31989a;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.Game .box{
+    width: fit-content;
+    height: 100%;
+    margin: 0 auto 0 ;
+}
+
+.Game .box .row{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.Game .box .row div{
+    width: 90px;
+    height: 90px;
+    color: white;
+    border: 1px solid #00000021;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 33px;
+    border-radius: 10px;
+    margin: 0 5px 5px 0;
+}
+
+.Game .box .row .wall{
+    background-color: #31989a;
+}
+.Game .box .row .road{
+    background-color: gray;
+}
+.Game .box .row .ele{
+    text-align: center;
+    background-color: #3f51b5;
+    border-color: white;
+    box-shadow: 0 2px 15px rgb(0 0 0 /20%);
+}
+.Game .box .row .target{
+    box-shadow: 0 2px 15px rgb(0 0 0 /20%);
+    text-align: center;
+    background-color: gray;
+    border-color: white;
+    border-color: black;
+}
+
+.App .move{
+    display: none;
+}
+
+.App .algo{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    text-align: center;
+    justify-content: space-between;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.App .algo div{
+    width: 150px;
+    background-color: #31989a;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.App .Game .box .active{
+    background-color: #4caf50;
+}
+
+@media(max-width: 991px){
+    .App .move {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .App .move div:not(.mid){
+        width: 40px;
+        height: 40px;
+        border-style: solid;
+        border-width: 20px;
+        text-align: center;
+    }
+    
+    .App .move .mid{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .App .move .up{
+        border-color: transparent transparent #31989a transparent ;
+        cursor: pointer;
+    }
+    .App .move .down{
+        border-color:  #31989a  transparent transparent transparent ;
+        cursor: pointer;
+    }
+    .App .move .left{
+        border-color: transparent #31989a transparent transparent ;
+        margin-right: 60px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    
+    .App .move .right{
+        border-color: transparent transparent transparent #31989a ;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    .App .algo{
+        right: 10px;
+    }
+}
+
+
+@media(max-width: 767px){
+    .start-up h1{
+        font-size: 50px;
+    }
+    .start-up h3{
+        font-size: 20px;
+        margin-bottom: 130px;
+    }
+    .App .move{
+        top: auto;
+        transform: none;
+        left: 268px;
+        bottom: -250px;
+    }
+    .App .algo{
+        top: auto;
+        transform: none;
+        bottom: -485px;
+        transform: translateX(25px);
+    }
+    .App .Title{
+        transform: translateX(35%);
+        margin-bottom: 90px;
+    }
+    .start-up .container{
+        grid-template-columns: repeat(auto-fill , minmax(100px,1fr));
+        margin-bottom: 50px;
+    }   
+}
