@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+# Soko Number Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+Soko Number is a puzzle game built with the React framework. The game consists of 6 challenging levels that will test your problem-solving skills. Each level presents a grid-based puzzle where you need to move numbered tiles to their designated positions.
 
-In the project directory, you can run:
+## How to Play
 
-### `npm start`
+visit [Soko Number](https://ibrahimhiarea.github.io/Soko-Number/) and have fun.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Gameplay
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- The objective of each level is to arrange the numbered tiles in the correct order.
+- You can move a tile by clicking on it. If there is an empty space adjacent to the tile, it will slide into that space.
+- You can choose to solve the puzzle manually or use one of the available algorithms.
 
-### `npm test`
+## Algorithms
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Soko Number provides several algorithms to solve the puzzles automatically. These algorithms can be accessed through the game's interface. Here are the available options:
 
-### `npm run build`
+1. Depth-First Search (DFS): This algorithm explores the search space by prioritizing the deepest unexplored nodes until a solution is found.
+2. Breadth-First Search (BFS): BFS explores the search space by visiting all neighboring nodes before moving to deeper levels.
+3. Uniform Cost Search: This algorithm determines the optimal path by considering the cost of each move and selecting the lowest-cost path.
+4. A* Search: A* is an informed search algorithm that evaluates each move based on a heuristic function and the cost of reaching the goal.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies Used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- React: A JavaScript library for building user interfaces.
+- HTML5: The markup language used for structuring the game's interface.
+- CSS3: Cascading Style Sheets for visual styling.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Credits
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Soko Number was created by [Ibrahim Hiarea] as a project for [Damascus University Subject]. If you have any feedback or suggestions, please feel free to contact me at [ibrahimhiarea2@gmail.com].
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Enjoy playing Soko Number and have fun solving the puzzles!
